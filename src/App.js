@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import Page from './pages/index';
+import * as React from 'react';
+// import { ChakraProvider } from '@chakra-ui/provider';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Testing GitHub Pages in React
-        </a>
-      </header>
+// hook function
+const Main = () => {
+  return(
+    <div>
+        {/* present index page only to emulate devaslife code */}
+        {/* <ChakraProvider> */}
+          <Page />
+        {/* </ChakraProvider> */}
     </div>
-  );
+  )
+}
+
+// react initial starting point
+function App() {
+  // redirect to hook function
+  return (
+      <Main />
+  )
 }
 
 export default App;
