@@ -18,8 +18,8 @@ const Page = () => {
                     <Heading as="h2" variant={"page-title"}>
                         Moosa Hassan
                     </Heading>
+                    <p>Software engineering student graduating in 2022.</p>
                 </Box>
-                <p>Software engineering student graduating in 2022.</p>
             </Box>
         </Container>
     )

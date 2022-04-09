@@ -3,19 +3,19 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 Code credits to:
-* [Devasfun] (https://github.com/craftzdog/craftzdog-homepage).
-* [Someone else] (https://google.com.au).
+* [Devasfun](https://github.com/craftzdog/craftzdog-homepage).
+* more to add soon.
 
 Modules:
 * [NodeJS](https://nodejs.org/en/).
 * [Chakra UI](https://chakra-ui.com/).
 * [Three.js](https://threejs.org/).
-* [Frame Motion](https://www.framer.com/motion/).
+* [Framer Motion](https://www.framer.com/motion/).
 
 ## Commands to deploy and commit:
 
 * git add .
-* git commit - "description"
+* git commit -m "description"
 * npm run deploy
 * git push -u origin master
 
