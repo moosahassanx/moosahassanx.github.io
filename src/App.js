@@ -1,15 +1,14 @@
 import Page from './pages/index';
 import * as React from 'react';
-// import { ChakraProvider } from '@chakra-ui/provider';
+import Navbar from './components/navbar';
 
 // hook function
 const Main = () => {
   return(
     <div>
         {/* present index page only to emulate devaslife code */}
-        {/* <ChakraProvider> */}
-          <Page />
-        {/* </ChakraProvider> */}
+        <Navbar />
+        <Page />
     </div>
   )
 }
