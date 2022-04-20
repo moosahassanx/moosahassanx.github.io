@@ -17,7 +17,7 @@ const Main = () => {
 function App() {
   // redirect to hook function
   return (
-      <Main />
+    <Main />
   )
 }
 
