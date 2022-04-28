@@ -8,7 +8,6 @@ const Main = () => {
     <div>
         {/* present index page only to emulate devaslife code */}
         <Navbar />
-        <Page />
     </div>
   )
 }

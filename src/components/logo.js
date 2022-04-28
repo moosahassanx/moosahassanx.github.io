@@ -4,6 +4,7 @@ import { Text, UseColorModeValue } from '@chakra-ui/react'
 
 import styled from '@emotion/styled'
 import { useColorModeValue } from '@chakra-ui/react'
+import { NavLink } from 'react-router-dom'
 
 const LogoBox = styled.span`
   font-weight: bold;
@@ -25,7 +26,7 @@ const Logo = () => {
     const footPrintImg = `/images/footprint${useColorModeValue('', '-dark')}.png`
 
     return(
-        <Link href="/">
+        <NavLink to="/">
             <a>
                 <LogoBox>
                     <Image src={footPrintImg} width={20} height={20} alt="ogo" />
@@ -39,7 +40,7 @@ const Logo = () => {
                     </Text>
                 </LogoBox>
             </a>
-        </Link>
+        </NavLink>
     )
 }
 
