@@ -23,7 +23,7 @@ import Logo from './logo'
 import NextLink from 'next/link'
 import Page from '../pages'
 import University from '../pages/university'
-import Works from '../pages/projects'
+import Works from '../pages/works'
 import pdfFile from '../resume.pdf'
 
 const LinkItem = ({path, children}) => {
@@ -79,9 +79,11 @@ const Navbar = props => {
                             <MenuButton as={IconButton} icon={<HamburgerIcon/>} variant='outline' aria-label='Options' />
 
                             <MenuList>
-                                <MenuItem><NavLink to='/'>Home</NavLink></MenuItem>
-                                <MenuItem><NavLink to='/works'>Works</NavLink></MenuItem>
-                                <MenuItem><Link href='https://github.com/moosahassanx/moosahassanx.github.io/tree/master' target="_blank">Source Code</Link></MenuItem>
+                                <NavLink to='/'><MenuItem>Home</MenuItem></NavLink>
+                                <NavLink to='/works'><MenuItem>Works</MenuItem></NavLink>
+                                <NavLink to='/uni'><MenuItem>University Studies</MenuItem></NavLink>
+                                <Link href='https://github.com/moosahassanx/moosahassanx.github.io/tree/master' target="_blank"><MenuItem>View Source Code</MenuItem></Link>
+                                <NavLink to={pdfFile} target="_blank"><MenuItem>Download Resume</MenuItem></NavLink>
                             </MenuList>
                         </Menu>
                     </Box>

@@ -6,7 +6,7 @@ import {
   Routes,
   Route
 } from 'react-router-dom';
-import Works from './pages/projects';
+import Works from './pages/works'
 import University from './pages/university';
 import { Container, Box, Heading } from "@chakra-ui/react";
 

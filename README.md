@@ -11,6 +11,8 @@ Modules:
 * [Chakra UI](https://chakra-ui.com/).
 * [Three.js](https://threejs.org/).
 * [Framer Motion](https://www.framer.com/motion/).
+* [Spinners React](https://github.com/adexin/spinners-react/).
+* [GitHub Pages](https://github.com/gitname/react-gh-pages).
 
 ## Commands to deploy and commit:
 
