@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Code credits to:
 * [Devasfun](https://github.com/craftzdog/craftzdog-homepage).
-* more to add soon.
+* [GitHub Pages](https://github.com/gitname/react-gh-pages).
 
 Modules:
 * [NodeJS](https://nodejs.org/en/).
@@ -12,7 +12,6 @@ Modules:
 * [Three.js](https://threejs.org/).
 * [Framer Motion](https://www.framer.com/motion/).
 * [Spinners React](https://github.com/adexin/spinners-react/).
-* [GitHub Pages](https://github.com/gitname/react-gh-pages).
 * [Hero Icons](https://heroicons.com/).
 
 ## Commands to deploy and commit:

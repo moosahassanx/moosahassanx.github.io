@@ -121,7 +121,7 @@ const Navbar = props => {
                                 <NavLink to='/works'><MenuItem>Works</MenuItem></NavLink>
                                 <NavLink to='/uni'><MenuItem>University Studies</MenuItem></NavLink>
                                 <Link href='https://github.com/moosahassanx/moosahassanx.github.io/tree/master' target="_blank"><MenuItem>View Source Code</MenuItem></Link>
-                                <Link to={pdfFile} target="_blank"><MenuItem>Download Resume</MenuItem></Link>
+                                <Link href={pdfFile} target="_blank"><MenuItem>Download Resume</MenuItem></Link>
                             </MenuList>
                         </Menu>
                     </Box>
