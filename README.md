@@ -13,9 +13,11 @@ Modules:
 * [Framer Motion](https://www.framer.com/motion/).
 * [Spinners React](https://github.com/adexin/spinners-react/).
 * [GitHub Pages](https://github.com/gitname/react-gh-pages).
+* [Hero Icons](https://heroicons.com/).
 
 ## Commands to deploy and commit:
 
+* git status
 * git add .
 * git commit -m "description"
 * npm run deploy

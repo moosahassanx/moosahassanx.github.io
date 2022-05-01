@@ -10,7 +10,8 @@ import {
     MenuList,
     MenuButton, 
     IconButton, 
-    useColorModeValue 
+    useColorModeValue, 
+    Center
 } from '@chakra-ui/react'
 import { 
     HashRouter,
@@ -25,6 +26,7 @@ import Page from '../pages'
 import University from '../pages/university'
 import Works from '../pages/works'
 import pdfFile from '../resume.pdf'
+import { HiAcademicCap, HiCode, HiOutlineSortDescending, HiOutlineArchive } from "react-icons/hi";
 
 const LinkItem = ({path, children}) => {
     const inactiveColor = useColorModeValue('gray200', 'whiteAlp.900')
@@ -66,10 +68,46 @@ const Navbar = props => {
                 flexGrow={1}
                 mt={{base: 4, nmd: 0}}
                 >
-                    <Link p={2} bg={'glassTeal'} color={'#202023'}><NavLink to='/works'>Works</NavLink></Link>
-                    <Link p={2} bg={'glassTeal'} color={'#202023'}><NavLink to='/uni'>University</NavLink></Link>
-                    <Link p={2} bg={'glassTeal'} color={'#202023'} href='https://github.com/moosahassanx/moosahassanx.github.io/tree/master' target="_blank">Source Code</Link>
-                    <Link p={2} bg={'glassTeal'} color={'#202023'} href={pdfFile} target="_blank">Resume</Link>
+                    <Link p={2} bg={'glassTeal'} color={'#202023'}>
+                        <Flex>
+                            <Center p={1}>
+                                <HiOutlineArchive />
+                            </Center>
+                            <Center>
+                                <NavLink to='/works'>Works</NavLink>
+                            </Center>
+                        </Flex>
+                    </Link>
+                    <Link p={2} bg={'glassTeal'} color={'#202023'}>
+                        <Flex>
+                            <Center p={1}>
+                                <HiAcademicCap/> 
+                            </Center>
+                            <Center>
+                                <NavLink to='/uni'>University</NavLink>
+                            </Center>
+                        </Flex>
+                    </Link>
+                    <Link p={2} bg={'glassTeal'} color={'#202023'} href='https://github.com/moosahassanx/moosahassanx.github.io/tree/master' target="_blank">
+                        <Flex>
+                            <Center p={1}>
+                                <HiCode />
+                            </Center>
+                            <Center>
+                                Source Code
+                            </Center>
+                        </Flex>
+                    </Link>
+                    <Link p={2} bg={'glassTeal'} color={'#202023'} href={pdfFile} target="_blank">
+                        <Flex>
+                            <Center p={1}>
+                                <HiOutlineSortDescending />
+                            </Center>
+                            <Center>
+                                Resume
+                            </Center>
+                        </Flex>
+                    </Link>
                 </Stack>
 
                 {/* mobile responsive */}
@@ -83,7 +121,7 @@ const Navbar = props => {
                                 <NavLink to='/works'><MenuItem>Works</MenuItem></NavLink>
                                 <NavLink to='/uni'><MenuItem>University Studies</MenuItem></NavLink>
                                 <Link href='https://github.com/moosahassanx/moosahassanx.github.io/tree/master' target="_blank"><MenuItem>View Source Code</MenuItem></Link>
-                                <NavLink to={pdfFile} target="_blank"><MenuItem>Download Resume</MenuItem></NavLink>
+                                <Link to={pdfFile} target="_blank"><MenuItem>Download Resume</MenuItem></Link>
                             </MenuList>
                         </Menu>
                     </Box>
