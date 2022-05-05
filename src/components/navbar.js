@@ -27,6 +27,7 @@ import University from '../pages/university'
 import Works from '../pages/works'
 import pdfFile from '../resume.pdf'
 import { HiAcademicCap, HiCode, HiOutlineSortDescending, HiOutlineArchive } from "react-icons/hi";
+import ThemeToggleButton from './theme-toggle-button'
 
 const LinkItem = ({path, children}) => {
     const inactiveColor = useColorModeValue('gray200', 'whiteAlp.900')
@@ -112,6 +113,7 @@ const Navbar = props => {
 
                 {/* mobile responsive */}
                 <Box flex={1} align='right'>
+                    <ThemeToggleButton />
                     <Box ml={2} display={{base: 'inline-block', md:'none'}}>
                         <Menu>
                             <MenuButton as={IconButton} icon={<HamburgerIcon/>} variant='outline' aria-label='Options' />
