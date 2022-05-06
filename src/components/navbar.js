@@ -11,39 +11,19 @@ import {
     MenuButton, 
     IconButton, 
     useColorModeValue, 
-    Center
+    Center,
+    color
 } from '@chakra-ui/react'
-import { 
-    HashRouter,
-    NavLink,
-    Routes,
-    Route
-} from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import Logo from './logo'
 import NextLink from 'next/link'
-import Page from '../pages'
-import University from '../pages/university'
-import Works from '../pages/works'
 import pdfFile from '../resume.pdf'
 import { HiAcademicCap, HiCode, HiOutlineSortDescending, HiOutlineArchive } from "react-icons/hi";
 import ThemeToggleButton from './theme-toggle-button'
-
-const LinkItem = ({path, children}) => {
-    const inactiveColor = useColorModeValue('gray200', 'whiteAlp.900')
-
-    return (
-        // <a p={2} bg={'#202023'} color='#202023'>{children}</a>
-        <NextLink>
-            <Link p={2} bg={'glassTeal'} color={'#202023'}>
-                {children}
-            </Link>
-        </NextLink>
-    )
-}
+import { GoMarkGithub } from "react-icons/go";
 
 const Navbar = props => {
-    const { path } = props
 
     return (
         <Box 
@@ -68,8 +48,9 @@ const Navbar = props => {
                 alignItems='center'
                 flexGrow={1}
                 mt={{base: 4, nmd: 0}}
+                {...props}
                 >
-                    <Link p={2} bg={'glassTeal'} color={'#202023'}>
+                    <Link p={2}>
                         <Flex>
                             <Center p={1}>
                                 <HiOutlineArchive />
@@ -79,7 +60,7 @@ const Navbar = props => {
                             </Center>
                         </Flex>
                     </Link>
-                    <Link p={2} bg={'glassTeal'} color={'#202023'}>
+                    <Link p={2}>
                         <Flex>
                             <Center p={1}>
                                 <HiAcademicCap/> 
@@ -89,17 +70,17 @@ const Navbar = props => {
                             </Center>
                         </Flex>
                     </Link>
-                    <Link p={2} bg={'glassTeal'} color={'#202023'} href='https://github.com/moosahassanx/moosahassanx.github.io/tree/master' target="_blank">
+                    <Link p={2} href='https://github.com/moosahassanx/moosahassanx.github.io/tree/master' target="_blank">
                         <Flex>
                             <Center p={1}>
-                                <HiCode />
+                                <GoMarkGithub />
                             </Center>
                             <Center>
                                 Source Code
                             </Center>
                         </Flex>
                     </Link>
-                    <Link p={2} bg={'glassTeal'} color={'#202023'} href={pdfFile} target="_blank">
+                    <Link p={2} href={pdfFile} target="_blank">
                         <Flex>
                             <Center p={1}>
                                 <HiOutlineSortDescending />

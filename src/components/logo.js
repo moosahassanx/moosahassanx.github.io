@@ -29,7 +29,7 @@ const Logo = () => {
         <NavLink to="/">
             <a>
                 <LogoBox>
-                    <Image src={footPrintImg} width={20} height={20} alt="ogo" />
+                    <Image src={footPrintImg} width={20} height={20} alt="Logo" />
                     <Text
                         color={useColorModeValue('gray.800', 'whiteAlpha.900')}
                         fontFamily='M PLUS Rounded 1c'

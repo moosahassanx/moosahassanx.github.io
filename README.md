@@ -2,11 +2,13 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Code credits to:
+## Code Credits
+
 * [Devasfun](https://github.com/craftzdog/craftzdog-homepage).
 * [GitHub Pages](https://github.com/gitname/react-gh-pages).
 
-Modules:
+## Stack (todo: add descriptions)
+
 * [NodeJS](https://nodejs.org/en/).
 * [Chakra UI](https://chakra-ui.com/).
 * [Three.js](https://threejs.org/).
@@ -77,4 +79,5 @@ Credits:
 * Devasfun (code inspiration)
 
 # other
+
 - add the link to Devasfun somewhere on the site
