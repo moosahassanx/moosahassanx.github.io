@@ -1,0 +1,63 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+ 
+.header-title {
+    font-size: 24px;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "Fraktur Regular";
+    src: url("./fonts/Fraktur_Regular.ttf") format("truetype");
+}
+
+.menu-header-text {
+    color: white;
+    font-family: "Fraktur Regular";
+    font-weight: 50;
+}
+
+.outline {
+    filter: drop-shadow(5px 0 0 white) 
+        drop-shadow(0 5px 0 white)
+        drop-shadow(-5px 0 0 white) 
+        drop-shadow(0 -5px 0 white);
+}
+
+.button-bar-header {
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.button-bar {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+ 
+.button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
