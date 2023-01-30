@@ -7,7 +7,7 @@ import { Mesh } from "three";
 export function Car() {
    const gltf = useLoader(
       GLTFLoader,
-      process.env.PUBLIC_URL + "models/car/scene.gltf"
+      "./models/car/scene.gltf"
    );
 
    useEffect(() => {
