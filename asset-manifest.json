@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "./static/css/main.02643889.css",
-    "main.js": "./static/js/main.a234e713.js",
+    "main.js": "./static/js/main.094eb92d.js",
     "static/media/Fraktur_Regular.ttf": "./static/media/Fraktur_Regular.1d1ecf9e1bc146913758.ttf",
     "index.html": "./index.html",
     "main.02643889.css.map": "./static/css/main.02643889.css.map",
-    "main.a234e713.js.map": "./static/js/main.a234e713.js.map"
+    "main.094eb92d.js.map": "./static/js/main.094eb92d.js.map"
   },
   "entrypoints": [
     "static/css/main.02643889.css",
-    "static/js/main.a234e713.js"
+    "static/js/main.094eb92d.js"
   ]
 }
