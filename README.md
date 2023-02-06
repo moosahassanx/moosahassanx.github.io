@@ -25,6 +25,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 * git push -u origin master
 
 ## Todo (+ structuring of site):
+* TODO:
+    * buttons need to be animated (left and right)
+    * background graphics for title header and buttons carousel
+    * buy supra model and use blender to edit it
+    * add music
+    * add camera movement animation on each button click
+    * add dialog box on each button click
 
 Navbar:
 * Work (add links to all of them ones)
@@ -41,19 +48,8 @@ Navbar:
 * Source code
 * Resume
 
-3D voxel:
-* Try to make car in this with me in it.
-    * Bonus: animate it with nitrous flames
-* Other idea: make me lift mad weights like OH press
-* Me playing cricket
-
 Hello message:
 * Last update: 06/03/2022.
-
-Intro Title:
-* Moosa Hassan
-    * Software engineering student graduating in 2022.
-    * *needs profile picture*
 
 Button:
 - Email Me
@@ -67,7 +63,7 @@ Bio:
 2022 - Graduating Bachelor of Software Engineering at The University of Newcastle.
 
 Hobbies:
-Art, Making music beats, Playing keyboard, Fashion, Travelling, Gymming, Socialising, Cricket.
+Art, Making music beats, Playing keyboard, Fashion, Travelling, Gymming, Socialising, Cricket, Cars.
 
 Internet presence:
 * GitHub
